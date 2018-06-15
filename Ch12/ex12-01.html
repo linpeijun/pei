@@ -89,13 +89,15 @@ var Oversea = new Spry.Data.HTMLDataSet("ex12-02.html", "tourOversea", {firstRow
           <img src="images/title2.gif" width="599" height="33" />
           <table width="0%" border="0" class="tourTable">
             <tr>
-              <td class="list"><div spry:region="Oversea">
+              <td class="list"><div class="tourListTable" spry:region="Oversea">
                 <table>
                   <tr>
                     <th spry:sort="name"><img src="images/list_title.gif" width="143" height="34" /></th>
                   </tr>
                   <tr spry:repeat="Oversea" spry:setrow="Oversea">
-                    <td>{name}</td>
+                    <td><ul>
+                      <li><a href="javascript:;">{name}</a></li>
+                    </ul></td>
                   </tr>
                 </table>
               </div></td>
